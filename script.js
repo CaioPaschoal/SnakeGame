@@ -6,7 +6,7 @@ snake[0] = {
     x: 8 * box,
     y: 8 * box
 }
-let direction = "up";
+let direction = "right";
 let food = {
     x: Math.floor(Math.random() * 15 + 1) * box,
     y: Math.floor(Math.random() * 15 + 1) * box
@@ -16,7 +16,7 @@ function createBG() {
     context.fillRect(0, 0, 16 * box, 16 * box);
 }
 function createSnake() {
-    for(i=0; i < snake.length; i++){
+    for(i = 0; i < snake.length; i++){
         context.fillStyle = "red";
         context.fillRect(snake[i].x, snake[i].y, box, box);
     }
